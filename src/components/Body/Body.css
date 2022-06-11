@@ -1,0 +1,59 @@
+.torso {
+    padding: 0 20vw;
+}
+
+.torso img {
+    border-bottom: solid #fa38ad 15px;
+}
+
+.img + p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 3vh 5vh;
+}
+
+.cont {
+    background: white;
+    margin-top: 8vh;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+    border: solid 1px #fa38ad;
+    border-radius: 15px;
+    background: white;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 45.5em) {
+    .torso {
+        padding: 0 8vw;
+    }
+
+    .img + p {
+        font-size: 1.5rem;
+        padding: 1vh 4vh 2vh 4vh;
+        line-height: 1.4;
+    }
+
+    button {
+        font-size: 1.13rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 10px;
+        margin-bottom: 2vh;
+    }
+
+    .torso img {
+        border-bottom: solid #fa38ad 10px;
+    }
+
+    .cont {
+        margin-top: 6vh;
+    }
+}

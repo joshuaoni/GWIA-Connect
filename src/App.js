@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navigation from './components/Navigation/Navigation';
+import 'tachyons';
+import Body from './components/Body/Body';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <Body />
+      <div className='pv4'>
+        <div className='dim flex'>
+          <span>Next</span>
+          <div>
+            <FontAwesomeIcon icon={faChevronRight} size="lg" />
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

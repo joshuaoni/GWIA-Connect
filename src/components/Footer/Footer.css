@@ -1,0 +1,27 @@
+.footer {
+    background: white;
+    box-shadow: 0 -3px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+.option {
+    padding: 1vh 4vh;
+    width: 33.3333%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.option img {
+    height: 45px;
+    width: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 45.5em) {
+    .option img {
+        height: 37px;
+    }
+}
